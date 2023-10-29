@@ -43,8 +43,6 @@ function App() {
     setAnchorElUser(null);
   };
 
-
-
   // const [textFieldValue, setTextFieldValue] = useState('');
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
@@ -70,10 +68,6 @@ function App() {
   //     console.error("Error fetching data:", error);
   //   }
   // };
-  
-  
-  
-  
 
   const [data, setdata] = useState({
     output: "",
@@ -221,7 +215,7 @@ function App() {
             <Box m={2} pt={3}>
               <TextField fullWidth label="Quiestion" id="fullWidth" />
               <Box m={2} pt={3}>
-                <Button variant="outlined" >Send</Button>
+                <Button variant="outlined" onClick={handleSubmit}>Send</Button>
               </Box>
             </Box>
           </Grid>
